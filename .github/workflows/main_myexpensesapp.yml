@@ -12,6 +12,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      MONGODB_URI: ${{ secrets.MONGODB_DB }}
+      MONGODB_DB: ${{ secrets.MONGODB_URI }}
 
     steps:
       - uses: actions/checkout@v2
