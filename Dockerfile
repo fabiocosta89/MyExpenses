@@ -6,12 +6,14 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
+ENV MONGODB_URI=mongo
+ENV MONGODB_DB=mongo
+
 # Rebuild the source code only when needed
 FROM node:alpine AS builder
 WORKDIR /app
 COPY . .
 COPY --from=deps /app/node_modules ./node_modules
-COPY --from=builder /app/.env ./.env
 RUN npm run build 
 RUN npm install --production --ignore-scripts --prefer-offline
 
@@ -30,7 +32,6 @@ COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
-COPY --from=builder /app/.env ./.env
 
 USER nextjs
 
