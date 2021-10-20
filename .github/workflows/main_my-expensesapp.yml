@@ -47,4 +47,4 @@ jobs:
         app-name: 'my-expensesapp'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_b82d1ebaf1964a5e98917b24770baa47 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_d324448ab6624529b30079f9534df78f }}/fabiocosta89/my-expenses:${{ github.sha }}'
+        images: '${{ secrets.AzureAppService_ContainerUsername_d324448ab6624529b30079f9534df78f }}/my-expenses:latest'
