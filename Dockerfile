@@ -6,14 +6,12 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-ENV MONGODB_URI=mongo
-ENV MONGODB_DB=mongo
-
 # Rebuild the source code only when needed
 FROM node:alpine AS builder
 WORKDIR /app
 COPY . .
 COPY --from=deps /app/node_modules ./node_modules
+COPY --from=deps /app/.env ./.env.local
 RUN npm run build 
 RUN npm install --production --ignore-scripts --prefer-offline
 
