@@ -43,7 +43,6 @@ Set each variable on `.env.local`:
 
 ### Run Next.js in development mode
 
-
 ```bash
 npm install
 npm run dev
