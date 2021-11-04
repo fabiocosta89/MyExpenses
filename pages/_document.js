@@ -17,7 +17,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body>
+        <body className="hold-transition sidebar-mini">
           <Main />
           <NextScript />
         </body>
