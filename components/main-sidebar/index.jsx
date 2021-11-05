@@ -10,6 +10,8 @@ const MainSideBar = () => {
             <BrandLogo />
             {/* Sidebar */}
             <Sidebar />
+            {/* Main Footer */}
+            
         </aside>
     );
 };

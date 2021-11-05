@@ -12,8 +12,8 @@ const BrandLogo = () => {
                     src={logo}
                     alt="MyExpenses Logo"
                     className="brand-image img-circle elevation-3"
-                    width={20}
-                    height={20}
+                    width={33}
+                    height={33}
                 />
                 <span className="brand-text font-weight-light">MyExpenses</span>
             </a>
