@@ -5,7 +5,7 @@ import 'admin-lte/dist/css/adminlte.min.css';
 
 import Head from 'next/head';
 import { useEffect } from 'react';
-import Layout from '../components/layout/layout';
+import Layout from '../components/layout';
 
 const MyApp = ({ Component, pageProps }) => {
     useEffect(() => {
