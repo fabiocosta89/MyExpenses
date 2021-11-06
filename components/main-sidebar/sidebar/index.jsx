@@ -1,12 +1,9 @@
 import React from 'react';
 
-import SideMenu from './side-menu';
-
-const Sidebar = () => {
+const Sidebar = ({children}) => {
     return (
         <div className="sidebar">
-            {/* Sidebar Menu */}
-            <SideMenu />
+            {children}
         </div>
     );
 };
