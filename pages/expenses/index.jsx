@@ -5,15 +5,15 @@ import PageHeader from '../../components/page-header';
 import BreadcrumbItem from '../../components/breadcrumb/breadcrumb-item';
 
 const Expenses = () => {
+    const title = "Expenses Board";
+
     return (
         <>
             <Head>
-                <title>MyExpenses - Expenses Board</title>
-                <link rel="icon" href="/favicon.ico" />
+                <title>MyExpenses - {title}</title>
             </Head>
-            <PageHeader title="Board">
-                <BreadcrumbItem title="Expenses" href="#" />
-                <BreadcrumbItem title="Board" />
+            <PageHeader title={title}>
+                <BreadcrumbItem title={title} />
             </PageHeader>
         </>
     );

@@ -19,6 +19,7 @@ const MainSideBar = () => {
                     <SideMenuItem href="/" name="Dashboard" icon="fas fa-th"/>
                     <SideMenuItemExpand href="#" name="Expenses">
                         <SideMenuItem href="/expenses" name="Board" icon="far fa-circle" isActive={true}/>
+                        <SideMenuItem href="/expenses/categories" name="Categories" icon="far fa-circle"/>
                     </SideMenuItemExpand>
                 </SideMenu>
             </Sidebar>
