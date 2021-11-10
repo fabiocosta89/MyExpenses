@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import React from 'react';
 
+import PageHeader from '../components/page-header';
+import BreadcrumbItem from '../components/breadcrumb/breadcrumb-item';
+
 const Dashboard = () => {
     return (
         <>
@@ -8,7 +11,9 @@ const Dashboard = () => {
                 <title>MyExpenses</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <h1>Dashboard</h1>
+            <PageHeader title="Dashboard">
+                <BreadcrumbItem title="Dashboard" />
+            </PageHeader>
         </>
     );
 }
