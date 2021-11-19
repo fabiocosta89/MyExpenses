@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_62fa8e7ab6f7475595fa2f1d9ef6105a }}/my-expenses:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_62fa8e7ab6f7475595fa2f1d9ef6105a }}/my-expenses:latest
         file: ./Dockerfile
 
   deploy:
@@ -48,4 +48,4 @@ jobs:
         app-name: 'my-expensesapp'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_2af21a842ae449ef8acbae2039ddc229 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_62fa8e7ab6f7475595fa2f1d9ef6105a }}/my-expenses:${{ github.sha }}'
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_62fa8e7ab6f7475595fa2f1d9ef6105a }}/my-expenses:latest'
