@@ -4,7 +4,7 @@ import Breadcrumb from '../breadcrumb';
 
 const PageHeader = ({title, children}) => {
     return (
-        <div className="content-header">
+        <section className="content-header">
             <div className="container-fluid">
                 <div className="row mb-2">
                     <div className="col-sm-6">
@@ -17,7 +17,7 @@ const PageHeader = ({title, children}) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

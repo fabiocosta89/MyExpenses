@@ -16,7 +16,15 @@ const Categories = () => {
                 <BreadcrumbItem title="Expenses" href="/expenses" />
                 <BreadcrumbItem title={title} />
             </PageHeader>
-
+            <section className="content">
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-12">
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     );
 }
