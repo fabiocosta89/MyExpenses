@@ -1,5 +1,7 @@
 // Font Awesome Icons
 import '@fortawesome/fontawesome-free/css/all.min.css';
+// Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
 // Theme style
 import 'admin-lte/dist/css/adminlte.min.css';
 
@@ -9,8 +11,7 @@ import Layout from '../components/layout';
 
 const MyApp = ({ Component, pageProps }) => {
     useEffect(() => {
-        import("jquery/dist/jquery.min");
-        import("bootstrap/dist/js/bootstrap.bundle");
+        import("react-bootstrap/dist/react-bootstrap.min");
         import("admin-lte/dist/js/adminlte.min");
       }, []);
 
