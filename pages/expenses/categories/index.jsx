@@ -4,7 +4,8 @@ import Head from 'next/head';
 import PageHeader from '../../../components/page-header';
 import BreadcrumbItem from '../../../components/breadcrumb/breadcrumb-item';
 import ResponsiveHoverTable from '../../../components/table';
-import ResponsiveHoverTableStyles from '../../../components/table/index.module.css';
+import TableEditButton from "../../../components/tableEditButton";
+import TableDeleteButton from "../../../components/tableDeleteButton";
 
 const Categories = () => {
     const title = "Expenses Categories";
@@ -14,16 +15,8 @@ const Categories = () => {
                 id: '1',
                 name: 'Test 1',
                 action: <>
-                    <a className={`btn btn-info btn-sm ${ResponsiveHoverTableStyles.btnSpace}`} href="#">
-                        <i className="fas fa-pencil-alt">
-                        </i>
-                        Edit
-                    </a>
-                    <a className={`btn btn-danger btn-sm ${ResponsiveHoverTableStyles.btnSpace}`} href="#">
-                        <i className="fas fa-trash">
-                        </i>
-                        Delete
-                    </a>
+                    <TableEditButton href="#" />
+                    <TableDeleteButton href="#" />
                 </>,
             },
             {
@@ -76,6 +69,9 @@ const Categories = () => {
                                 columns={columns}
                                 data={data}
                             />
+                        </div>
+                        <div className='col-12'>
+
                         </div>
                     </div>
                 </div>
