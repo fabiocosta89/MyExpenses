@@ -72,7 +72,7 @@ const Categories = () => {
                             />
                         </div>
                         <div className='col-12'>
-                            <TableAddButton href="#" />
+                            <TableAddButton href="/expenses/categories/add" />
                         </div>
                     </div>
                 </div>
