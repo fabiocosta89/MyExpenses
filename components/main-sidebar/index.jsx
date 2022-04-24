@@ -16,6 +16,7 @@ const MainSideBar = () => {
                 <SideUserPanel />
                 <SideMenu>
                     <SideMenuItem href="/" name="Dashboard" icon="fas fa-th" isActive={true} />
+                    <SideMenuItem href="/expense-types" name="Expense Types" icon="fas fa-th" />
                     <SideMenuItem href="/expenses" name="Expenses" icon="far fa-circle" />
                     <SideMenuItem href="/categories" name="Categories" icon="far fa-circle" />
                 </SideMenu>
