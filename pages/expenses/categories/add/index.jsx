@@ -16,6 +16,13 @@ const Add = () => {
                 <BreadcrumbItem title="Categories" href="/expenses/categories" />
                 <BreadcrumbItem title="Add" />
             </PageHeader>
+            <section className='content'>
+                <div className='container-fluid'>
+                    <div className='row'>
+                        
+                    </div>
+                </div>
+            </section>
         </>
     );
 }

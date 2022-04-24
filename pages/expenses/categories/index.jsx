@@ -4,9 +4,9 @@ import Head from 'next/head';
 import PageHeader from '../../../components/page-header';
 import BreadcrumbItem from '../../../components/breadcrumb/breadcrumb-item';
 import ResponsiveHoverTable from '../../../components/table';
-import TableEditButton from "../../../components/tableEditButton";
-import TableDeleteButton from "../../../components/tableDeleteButton";
-import TableAddButton from '../../../components/tableAddButton/tableAddButton';
+import TableEditButton from "../../../components/table/tableEditButton";
+import TableDeleteButton from "../../../components/table/tableDeleteButton";
+import TableAddButton from '../../../components/table/tableAddButton/tableAddButton';
 
 const Categories = () => {
     const title = "Expenses Categories";
