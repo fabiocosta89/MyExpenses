@@ -1,15 +1,15 @@
 import React from 'react';
 import Head from 'next/head';
 
-import PageHeader from '../../../components/page-header';
-import BreadcrumbItem from '../../../components/breadcrumb/breadcrumb-item';
-import ResponsiveHoverTable from '../../../components/table';
-import TableEditButton from "../../../components/table/tableEditButton";
-import TableDeleteButton from "../../../components/table/tableDeleteButton";
-import TableAddButton from '../../../components/table/tableAddButton/tableAddButton';
+import PageHeader from '../../components/page-header';
+import BreadcrumbItem from '../../components/breadcrumb/breadcrumb-item';
+import ResponsiveHoverTable from '../../components/table';
+import TableEditButton from "../../components/table/tableEditButton";
+import TableDeleteButton from "../../components/table/tableDeleteButton";
+import TableAddButton from '../../components/table/tableAddButton/tableAddButton';
 
 const Categories = () => {
-    const title = "Expenses Categories";
+    const title = "Categories";
     const data = React.useMemo(
         () => [
             {
@@ -58,7 +58,6 @@ const Categories = () => {
                 <title>MyExpenses - {title}</title>
             </Head>
             <PageHeader title={title}>
-                <BreadcrumbItem title="Expenses" href="/expenses" />
                 <BreadcrumbItem title={title} />
             </PageHeader>
             <section className="content">
@@ -72,7 +71,7 @@ const Categories = () => {
                             />
                         </div>
                         <div className='col-12'>
-                            <TableAddButton href="/expenses/categories/add" />
+                            <TableAddButton href="/categories/add" />
                         </div>
                     </div>
                 </div>
